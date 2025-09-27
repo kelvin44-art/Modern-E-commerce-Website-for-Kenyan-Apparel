@@ -1,0 +1,30 @@
+    /* BouncingDot.css */
+    .dot {
+      animation: bounce 0.6s infinite alternate, pulse 2s ease-in-out infinite; /* Apply the animation */
+    }
+
+    @keyframes bounce {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(-1px);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 white; 
+  
+      }
+      70% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 15px rgba(255, 0, 0, 0);
+
+      }
+      100% {
+        transform: scale(0.9);
+        box-shadow: 0 0 0 0 rgba(255, 0, 0, 0);
+
+      } }

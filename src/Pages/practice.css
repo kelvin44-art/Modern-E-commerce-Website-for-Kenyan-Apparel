@@ -1,0 +1,29 @@
+
+.parent {
+  border: none;
+}
+.parent img {
+  transition: 300ms ease-in-out;
+  cursor: pointer;
+  border-radius: 50%;
+  filter: brightness(0) invert(1);
+}
+
+.parent:hover img {
+  transform: translateX(-20px) scaleX(-1);
+}
+.child {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  transition: opacity 300ms ease-in-out, visibility 300ms ease-in-out, transform 300ms ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px);
+}
+.parent:hover .child,
+.parent img:hover + .child {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0px);
+}
