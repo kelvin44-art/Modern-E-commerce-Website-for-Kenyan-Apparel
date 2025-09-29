@@ -6,12 +6,14 @@ import ProductDetail from './Pages/ProductDetail'
 import PageTransition from './Component/PageTransition'
 import Lounge from './Pages/Lounge'
 import Closet from './Pages/Closet'
+import NavBar from './Component/NavBar'
 
 
 function App() {
   return (
     <div>
       <BrowserRouter>
+      <NavBar/>
          <Routes>
           <Route path='/' element={<PageTransition><Home/></PageTransition>}/>
           <Route path='/room/bedroom' element={<PageTransition><Bedroom/></PageTransition>}/>
